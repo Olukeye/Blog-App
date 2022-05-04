@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="content-section">
+      <div class="media">
+          <div class="media-body">
+            <h1>{{ current_user.username }}</h1>
+            <h1>{{ current_user.email}}</h1>
+          </div>
+      </div>
+      <div id='container'>
+        <div class='signup'>
+           <form method="POST" action="">
+            {{form.hidden_tag()}}
+            {{form.username(class="form-control", type='text', placeholder='username:')}}
+            {{form.email(class="form-control", type='text', placeholder='email:')}}
+            {{form.submit(type='submit')}}
+           </form>
+        </div>
+      </div>
+  </div>
+{% endblock content %}

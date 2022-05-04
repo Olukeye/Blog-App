@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+<!-- {% block content %} -->
+<div id='container'>
+    <div class='signup'>
+       <form method="POST" action="">
+        {{form.hidden_tag()}}
+        {{form.username(class="form-control", type='text', placeholder='username:')}}
+        {{form.email(class="form-control", type='text', placeholder='email:')}}
+        {{form.password(class="form-control", type='text', placeholder='password')}}
+        {{form.confirm_password(class="form-control", type='text', placeholder='confirm_password')}}
+        {{form.submit(type='submit')}}
+       </form>
+    </div>
+  </div>
+  
+<!-- {% endblock content %} -->

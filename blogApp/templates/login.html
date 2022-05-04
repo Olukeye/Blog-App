@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id='container'>
+    <div class='signup'>
+       <form method="POST" action="">
+        {{form.hidden_tag()}}
+        {{form.email(class="form-control", type='text', placeholder='email:')}}
+        {{form.password(class="form-control", type='text', placeholder='password')}}
+        {{form.submit(type='submit')}}
+       </form>
+    </div>
+  </div>
+{% endblock content %}
